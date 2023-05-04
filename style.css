@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:  #555 ;
+    --color : #fff ;
+    --hover-color:  #04AA6D;
+    --btn-color: #1e90ff ;
+    --hover-btn-color: #145ba7 ;
+}
+.container{
+    width: 100vw;
+    height: 55px;
+    background-color: var(--maincolor);
+    /* position: fixed;
+    top: 0; */
+}
+/* .container::after{
+    content: '';
+    height: 300px;
+    width: 50%;
+    position: absolute;
+    bottom: 660px;
+    right: 20px;
+    top: 150px;
+    background-color: var(--maincolor);
+    border-radius: 50% ;
+    z-index: -1;
+    transform: scale(1.1,1.9); 
+    border-bottom-left-radius: 100% ;
+    border-bottom-right-radius: 100% ; 
+} */
+.container ul{
+    list-style: none;
+    display: flex;
+}
+.container ul li{
+    margin: 0 15px;
+    padding: 16px 30px;
+}
+.container ul li a{
+    color: var(--color);
+    font-size: 20px;
+    text-decoration: none;
+}
+.container ul li:hover{
+    background-color: var(--hover-color);
+}
+.focus{
+    background-color: var(--hover-color);
+}
+.main{
+    display: flex;
+    margin-top: 90px;
+}
+.content{
+    height: 350px;
+    width: 250px;
+    background-color: var(--color);
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+}
+.content:hover{
+    /* transform: scale(1.1 ,1.1); */
+    /* transform: 1s; */
+    cursor: pointer;
+}
+.content img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.content p{
+    margin-top: 10px;
+    color: var(--hover-color);
+}
+.content p::after{
+    content: '350 L.E';
+    margin: 0 10px;
+    color: var(--maincolor);
+    text-decoration: line-through;
+}
+.content button{
+    width: 40%;
+    height: 35px;
+    outline: none;
+    border: var(--color);
+    border-radius: 30px;
+    margin-top: 90px;
+    background-color: var(--btn-color);
+    color: var(--color);
+    font-size: 20px;
+}
+.content button:hover{
+    cursor: pointer;
+    background-color: var(--hover-btn-color);
+    transform: scale(1.1 ,1.1);
+}
+
